@@ -1,0 +1,158 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f1f5f9;
+    color: #334155;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Contenedor principal estilo hoja de vida */
+.cv-container {
+    max-width: 850px;
+    margin: 20px auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Encabezado */
+.header {
+    border-bottom: 3px solid #1e40af;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 2.2rem;
+    color: #1e3a8a;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #2563eb;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #64748b;
+}
+
+.contact-info a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Secciones */
+.section {
+    margin-bottom: 30px;
+}
+
+.section h2 {
+    font-size: 1.3rem;
+    color: #1e3a8a;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 6px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Items de educación y experiencia */
+.item {
+    margin-bottom: 15px;
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-header h3 {
+    font-size: 1.05rem;
+    color: #0f172a;
+}
+
+.date {
+    font-size: 0.85rem;
+    background-color: #e0e7ff;
+    color: #3730a3;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+.institution {
+    font-size: 0.95rem;
+    color: #475569;
+    font-style: italic;
+}
+
+/* Cuadrícula para Habilidades */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.skill-category h3 {
+    font-size: 1rem;
+    color: #2563eb;
+    margin-bottom: 8px;
+}
+
+.skill-category ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.skill-category li {
+    margin-bottom: 4px;
+    font-size: 0.95rem;
+}
+
+/* Pie de página */
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #e2e8f0;
+    font-size: 0.85rem;
+    color: #94a3b8;
+}
+
+/* Diseño adaptativo para celulares */
+@media (max-width: 600px) {
+    .cv-container {
+        padding: 20px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .item-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+}
